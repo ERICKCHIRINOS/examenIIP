@@ -58,7 +58,7 @@
 
                 <div class="mb-3">
                     <label for="plate_number" class="form-label">Plate Number</label>
-                    <input type="text" class="form-control" id="plate_number" name="plate_number" required>
+                    <input type="text" class="form-control" id="plate_number" name="plate_number">
                 </div>
 
                 <div class="mb-3">
@@ -105,7 +105,7 @@
         </form>
     </dialog>
 
-    {{-- @if (@errors->any())
+    @if ($errors->any())
     <div class="alert alert-danger">
         <ul>
             @foreach ($errors->all() as $error)
@@ -113,7 +113,7 @@
             @endforeach
         </ul>
     </div>
-@endif --}}
+@endif
 
     <table class="table">
         <thead>
