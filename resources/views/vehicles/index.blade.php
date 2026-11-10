@@ -145,11 +145,11 @@
                     <td>
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <button type="button" class="btn-solid theme-primary">Editar</button>
-                            {{-- <form action="{{ route('vehicles.destroy') }}" method="post">
+                            <form action="{{ route('vehicles.destroy', $vehicle->id) }}" method="post">
                             @csrf
-                            @method('DELETE') --}}
-                            <button type="button" class="btn-solid theme-primary">Eliminar</button>
-                            {{-- </form> --}}
+                            @method('DELETE')
+                            <button type="submit" class="btn-solid theme-primary">Eliminar</button>
+                            </form>
                         </div>
                     </td>
                 </tr>
